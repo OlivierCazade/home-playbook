@@ -1,2 +1,2 @@
-- include_tasks: debian.yml
-  when: ansible_os_family == "Debian"
+- name: Include OS-specific install tasks
+  include_tasks: "{{ ansible_os_family }}.yml"

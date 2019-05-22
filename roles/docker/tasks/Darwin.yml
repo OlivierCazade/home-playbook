@@ -1,0 +1,4 @@
+- name: Install Docker from homebrew cask
+  homebrew_cask:
+    name: emacs
+    state: present
