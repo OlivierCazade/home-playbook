@@ -1,2 +1,8 @@
 - name: Include OS-specific install tasks
   include_tasks: "{{ ansible_os_family }}.yml"
+
+- name: Install my emacs config
+  git:
+    repo: 'https://github.com/OlivierCazade/emacs.git'
+    dest: ~/.emacs.d
+    update: no
