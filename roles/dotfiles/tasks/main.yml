@@ -1,0 +1,7 @@
+- name : Add configuration files
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  with_items:
+    - { src: 'bashrc', dest: '~/.bashrc' }
+    - { src: 'inputrc', dest: '~/.inputrc' }
