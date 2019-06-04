@@ -1,1 +1,4 @@
-source $HOME/.dotfiles/*/source.sh
+for i in $(ls $HOME/.dotfiles/*/source.sh)
+do
+    source $i
+done
