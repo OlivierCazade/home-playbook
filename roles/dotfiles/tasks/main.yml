@@ -4,4 +4,5 @@
     dest: "{{ item.dest }}"
   with_items:
     - { src: 'bashrc', dest: '~/.bashrc' }
+    - { src: 'bash_profile', dest: '~/.bash_profile' }
     - { src: 'inputrc', dest: '~/.inputrc' }
