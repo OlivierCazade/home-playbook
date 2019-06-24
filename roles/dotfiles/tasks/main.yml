@@ -6,3 +6,8 @@
     - { src: 'bashrc', dest: '~/.bashrc' }
     - { src: 'bash_profile', dest: '~/.bash_profile' }
     - { src: 'inputrc', dest: '~/.inputrc' }
+
+- name : Create a directory if it does not exist
+  file:
+    path: ~/.dotfiles
+    state: directory
