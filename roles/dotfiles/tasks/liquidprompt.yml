@@ -3,3 +3,8 @@
     repo: 'https://github.com/nojhan/liquidprompt.git'
     dest: ~/config/liquidprompt
     update: no
+
+- name : Create liquidprompt directory
+  file:
+    path: ~/.dotfiles/liquidprompt
+    state: directory
