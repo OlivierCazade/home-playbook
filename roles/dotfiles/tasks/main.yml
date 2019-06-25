@@ -11,3 +11,6 @@
   file:
     path: ~/.dotfiles
     state: directory
+
+- name : Install liquidprompt
+  include_tasks: "liquidprompt.yml"

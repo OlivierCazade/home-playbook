@@ -1,0 +1,5 @@
+- name : Clone liquidprompt
+  git:
+    repo: 'https://github.com/nojhan/liquidprompt.git'
+    dest: ~/config/liquidprompt
+    update: no
