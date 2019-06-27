@@ -15,3 +15,15 @@
     dest: "{{ item.dest }}"
   with_items:
     - { src: 'liquidprompt.source', dest: '~/.dotfiles/liquidprompt/source.sh' }
+
+- name : Create completion directory
+  file:
+    path: ~/.dotfiles/completion
+    state: directory
+
+- name : Add completion loading
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  with_items:
+    - { src: 'completion.source', dest: '~/.dotfiles/completion/source.sh' }
