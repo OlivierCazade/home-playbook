@@ -1,2 +1,14 @@
 - name: Include OS-specific install tasks
   include_tasks: "{{ ansible_os_family }}.yml"
+
+- name : Create pyenv directory
+  file:
+    path: ~/.dotfiles/pyenv
+    state: directory
+
+- name : Add configuration files
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  with_items:
+    - { src: 'pyenv.source', dest: '~/.dotfiles/pyenv/source.sh' }
