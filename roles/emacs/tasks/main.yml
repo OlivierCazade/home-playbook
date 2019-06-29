@@ -4,5 +4,11 @@
 - name: Install my emacs config
   git:
     repo: 'https://github.com/OlivierCazade/emacs.git'
-    dest: ~/.emacs.d
+    dest: ~/config/emacs
     update: no
+
+- name: Create emacs directory symbolic link
+  file:
+    src: ~/config/emacs
+    dest: ~/.emacs.d
+    state: link
