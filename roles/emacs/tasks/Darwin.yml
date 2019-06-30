@@ -2,3 +2,8 @@
   homebrew_cask:
     name: emacs
     state: present
+
+- name: Install emacs fonts from homebrew cask
+  homebrew_cask:
+    name: font-firacode-nerd-font-mono
+    state: present
