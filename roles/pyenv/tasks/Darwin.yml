@@ -1,4 +1,4 @@
 - name: Install pyenv from homebrew
-  homebrew_cask:
+  homebrew:
     name: pyenv
     state: present
