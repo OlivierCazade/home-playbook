@@ -1,0 +1,4 @@
+- name: Install small cli tools
+  homebrew:
+    name: bash
+    state: present
