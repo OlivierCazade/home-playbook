@@ -2,3 +2,8 @@
   homebrew:
     name: bash
     state: present
+
+- name: Install iterm2 from homebrew cask
+  homebrew_cask:
+    name: iterm2
+    state: present
