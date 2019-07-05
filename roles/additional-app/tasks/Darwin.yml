@@ -12,3 +12,10 @@
   homebrew_cask:
     name: spotify
     state: present
+
+- name: Install small cli tools
+  homebrew:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - wget
