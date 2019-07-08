@@ -13,6 +13,11 @@
     name: spotify
     state: present
 
+- name: Install chrome from homebrew cask
+  homebrew_cask:
+    name: google-chrome
+    state: present
+
 - name: Install small cli tools
   homebrew:
     name: "{{ item }}"
