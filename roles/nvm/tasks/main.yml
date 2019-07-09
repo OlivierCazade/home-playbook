@@ -1,0 +1,14 @@
+- name: Include OS-specific install tasks
+  include_tasks: "{{ ansible_os_family }}.yml"
+
+- name : Create nvm directory
+  file:
+    path: ~/.dotfiles/nvm
+    state: directory
+
+- name : Add configuration files
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  with_items:
+    - { src: 'nvm.source', dest: '~/.dotfiles/nvm/source.sh' }
