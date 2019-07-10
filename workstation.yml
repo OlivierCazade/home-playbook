@@ -5,4 +5,5 @@
    - docker
    - dotfiles
    - pyenv
+   - nvm
    - additional-app
