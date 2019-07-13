@@ -12,3 +12,8 @@
   homebrew:
     name: ispell
     state: present
+
+- name: Install shellcheck (used by flymake)
+  homebrew:
+    name: shellcheck
+    state: present
