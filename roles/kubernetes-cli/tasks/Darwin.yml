@@ -1,0 +1,4 @@
+- name: Install kubernetes-cli
+  homebrew:
+    name: "kubernetes-cli"
+    state: present
