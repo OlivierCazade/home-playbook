@@ -2,3 +2,8 @@
   homebrew:
     name: "kubernetes-cli"
     state: present
+
+- name: Install kubectx
+  homebrew:
+    name: "kubectx"
+    state: present
