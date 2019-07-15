@@ -7,3 +7,8 @@
   homebrew:
     name: "kubectx"
     state: present
+
+- name: Install skaffold
+  homebrew:
+    name: "skaffold"
+    state: present
