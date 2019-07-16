@@ -27,3 +27,9 @@
     - tree
     - wget
     - pstree
+
+# TODO add karabiner config
+- name: Install karabiner from homebrew cask
+  homebrew_cask:
+    name: karabiner-elements
+    state: present
