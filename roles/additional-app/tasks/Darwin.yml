@@ -18,6 +18,11 @@
     name: google-chrome
     state: present
 
+- name: Install firefox from homebrew cask
+  homebrew_cask:
+    name: firefox
+    state: present
+
 - name: Install small cli tools
   homebrew:
     name: "{{ item }}"
