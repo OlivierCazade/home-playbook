@@ -1,2 +1,8 @@
 - name: Include OS-specific install tasks
   include_tasks: "{{ ansible_os_family }}.yml"
+
+- name: Add the flathub flatpak remote to the system installation
+  flatpak_remote:
+    name: flathub
+    state: present
+    flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
