@@ -1,0 +1,4 @@
+- name: Install the emacs flatpak
+  flatpak:
+    name:  org.gnu.emacs
+    state: present
